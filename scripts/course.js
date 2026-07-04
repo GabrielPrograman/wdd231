@@ -11,38 +11,59 @@ const container = document.querySelector('#course-container');
 const totalCreditsDisplay = document.querySelector('#total-credits');
 
 function displayCourses(filteredCourses) {
+    if (!container) return;
     container.innerHTML = '';
 
     filteredCourses.forEach(course => {
         const courseElement = document.createElement('div');
-        const statusClass = course.completed ? 'completed' : 'incomplete';
-        card.className = `course-card ${statusClass}`;
-        card.innerHTML = `${course.subject} ${course.number}`;
-        container.appendChild(card);
+
+        const statusClass = course.completed ? 'completed' : 'uncompleted';
+        courseElement.className = `course-card ${statusClass}`;
+
+        courseElement.innerHTML = `${course.subject} ${course.number}`;
+        container.appendChild(courseElement);
     });
 
-    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-    totalCreditsDisplay.textContent = totalCredits;
+    if (totalCreditsDisplay) {
+        const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+        totalCreditsDisplay.textContent = totalCredits;
+    }
 }
-
-document.querySelector('#filter-all').addEventListener('click', (e) => {
-    setActiveButton(e.target);
-    displayCourses(courses);
-});
-
-document.querySelector('#filter-completed').addEventListener('click', (e) => {
-    setActiveButton(e.target);
-    displayCourses(courses.filter(course => course.subject === `CSE`));
-});
-
-document.querySelector('#filter-incomplete').addEventListener('click', (e) => {
-    setActiveButton(e.target);
-    displayCourses(courses.filter(course => course.subject === `WDD`));
-});
 
 function setActiveButton(button) {
-    document.querySelectorAll('.filter-button').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
+    document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+    if (button) {
+        button.classList.add('active');
+    }
 }
 
-displayCourses(courses);
+window.addEventListener('DOMContentLoaded', () => {
+    const btnAll = document.querySelector('#filter-all');
+    const btnCse = document.querySelector('#filter-cse');
+    const btnWdd = document.querySelector('#filter-wdd');
+
+    if (btnAll) {
+        btnAll.addEventListener('click', (e) => {
+            setActiveButton(e.target);
+            displayCourses(courses);
+        });
+    }
+
+    if (btnCse) {
+        btnCse.addEventListener('click', (e) => {
+            setActiveButton(e.target);
+            const cseCourses = courses.filter(course => course.subject === 'CSE');
+            displayCourses(cseCourses);
+        });
+    }
+
+    if (btnWdd) {
+        btnWdd.addEventListener('click', (e) => {
+            setActiveButton(e.target);
+            const wddCourses = courses.filter(course => course.subject === 'WDD');
+            displayCourses(wddCourses);
+        });
+    }
+
+    displayCourses(courses);
+});
