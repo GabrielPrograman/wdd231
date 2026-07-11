@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Timbuktu Tech Solutions",
+        "address": "15 Main St, Timbuktu",
+        "phone": "800-555-0001",
+        "website": "http://www.timbuktutech.com",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=200&fit=crop",
+        "level": 3,
+        "description": "IT consulting and web development."
+    },
+    {
+        "name": "Desert Oasis Cafe",
+        "address": "22 San Dune Ave, Timbuktu",
+        "phone": "800-555-0002",
+        "website": "http://www.desertoasiscafe.com",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=200&fit=crop",
+        "level": 1,
+        "description": "The best coffee in the desert."
+    },
+    {
+        "name": "Mali Market Grocers",
+        "address": "8 Market Square, Timbuktu",
+        "phone":"800-555-0003",
+        "website": "http://www.malimarket.com",
+        "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=300&h=200&fit=crop",
+        "level": 2,
+        "description": "Fresh local produce."
+    },
+    {
+        "name": "Sahara Safaris",
+        "address": "45 Camel Route, Timbuktu",
+        "phone": "800-555-0004",
+        "website": "http://www.saharasafaris.com",
+        "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=300&h=200&fit=crop",
+        "level": 3,
+        "description": "Guided desert tours."
+    },
+    {
+        "name": "Ancient Texts Bookstore",
+        "address": "12 History Lane, Timbuktu",
+        "phone": "800-555-0005",
+        "website": "http://www.ancienttexts.com",
+        "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=300&h=200&fit=crop",
+        "level": 1,
+        "description": "Historical manuscripts and books."
+    },
+    {
+        "name": "Timbuktu Textiles",
+        "address": "19 Artisan Way, Timbuktu",
+        "phone": "800-555-0006",
+        "website": "http://www.timbuktutextiles.com",
+        "image": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=300&h=200&fit=crop",
+        "level": 2,
+        "description": "Handmade fabrics and clothing."
+    },
+    {
+        "name": "Golden Sands Bank",
+        "address": "1 Financial PLaza, Timbuktu",
+        "phone": "800-555-0007",
+        "website": "http://www.goldensandsbank.com",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=200&fit=crop",
+        "level": 3,
+        "description": "Secure financial services."
+    }
+]
