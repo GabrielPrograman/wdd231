@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce | Directory</title>
+    <meta name="description" content="Directory page for the Timbuktu Chamber of Commerce. Find local businesses and services.">
+    <meta name="author" content="Gabriel Bruzual">
+
+    <link rel="icon" href="../images/favicon.ico">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover businesses in Timbuktu. Join our chamber today!">
+    <meta property="og:image" content="https://gabrielprograman.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url content=https://gabrielprograman.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/small.css">
+    <link rel="stylesheet" href="../styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="Timbuktu Chamber Logo" class="logo">
+        <hi>Timbuktu Chamber of Commerce</hi>
+        <button id="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="primary-nav" class="hidden">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html"></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Business Directory</h2>
+
+        <div class="menu-toggles">
+            <button id="grid-btn">Grid</button>
+            <button id="list-btn">List</button>
+        </div>
+
+        <div id="members-container" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(233) 555-2300</p>
+        </div>
+        <div class="footer-dev">
+            <p>WDD231 Class Project</p>
+            <p>Gabriel Alejandro Bruzual Patiño</p>
+            <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script src="../scripts/directory.js"></script>
+</body>
+</html>

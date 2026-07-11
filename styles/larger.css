@@ -48,4 +48,31 @@
         flex: 1 1 30%;
         max-width: 300px;
     }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .list section h3 {
+        width: 25%;
+        margin: 0;
+    }
+
+    .list section p {
+        width: 30%;
+        margin: 0;
+    }
+
+    .list section a {
+        width: 15%;
+        text-align: right;
+        margin: 0;
+    }
 }
