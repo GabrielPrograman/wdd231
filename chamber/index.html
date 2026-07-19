@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce | Directory</title>
+    <meta name="description" content="Directory page for the Timbuktu Chamber of Commerce. Find local businesses and services.">
+    <meta name="author" content="Gabriel Bruzual">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover businesses in Timbuktu. Join our chamber today!">
+    <meta property="og:url" content="https://gabrielprograman.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://gabrielprograman.github.io/wdd231/chamber/images/logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Timbuktu Chamber Logo" class="logo">
+        <h2>Timbuktu Chamber of Commerce</h2>
+        <button id="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="primary-nav" class="hidden">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html"></a></li>
+        </ul>
+    </nav>
+
+    <main class="home-main">
+        <div class="hero">
+            <img src="images/hero.webp" alt="Beautiful view of Timbuktu" width="100" height="auto">
+            <div class="hero-content">
+                <h1>Welcome to Timbuktu</h1>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </div>
+
+        <div class="home-grid">
+            <section class="card events-card">
+                <h2>Current Events</h2>
+                <div class="card-content">
+                    <p><strong>Nov 15:</strong> Business Networking Breakfast (8:00 AM)</p>
+                    <hr>
+                    <p><strong>Nov 22:</strong> Timbuktu Tech Expo (10:00 AM)</p>
+                    <hr>
+                    <p><strong>Dec 01:</strong> End of Year Gala & Awards</p>
+                </div>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather in Timbuktu</h2>
+                <div class="card-content">
+                    <div id="current-weather">
+                        <p>Loading weather...</p>
+                    </div>
+                    <h3>3-Day Forecast</h3>
+                    <div id="weather-forecast">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="card spotlights-card">
+                <h2>Member Spotlights</h2>
+                <div class="card-content" id="spotlight-container">
+                    <p>Loading spotlights...</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>Timbuktu Chamber of Commerce</h2>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(233) 555-2300</p>
+        </div>
+        <div class="footer-dev">
+            <p>WDD231 Class Project</p>
+            <p>Gabriel Alejandro Bruzual Patiño</p>
+            <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    </body>
+    </html>

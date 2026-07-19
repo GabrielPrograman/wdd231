@@ -267,3 +267,72 @@ main h1 {
     border-bottom: 1px solid #eee;
     margin: 0 1rem 1.5rem 1rem;
 }
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: brightness(70%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    border-bottom: none;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.spotlight-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.spotlight-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.spotlight-item img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
