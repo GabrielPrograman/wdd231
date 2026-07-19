@@ -65,15 +65,25 @@ async function getMembers() {
 
     const gridBtn = document.getElementById('grid-btn');
     const listBtn = document.getElementById('list-btn');
-
+     
+    if (gridBtn) { 
     gridBtn.addEventListener('click', () => {
-        container.classList.add('grid');
-        container.classList.remove('list');
+        if (container) { 
+            container.classList.add('grid');
+            container.classList.remove('list');
+        }
     });
-
+}
+   
+   if (listBtn) { 
     listBtn.addEventListener('click', () => {
-        container.classList.add('list');
-        container.classList.remove('grid');
+        if (container) { 
+            container.classList.add('list');
+            container.classList.remove('grid');
+        }
     });
-
-    getMembers();
+}
+    
+   if (container) { 
+      getMembers();
+   }
