@@ -67,9 +67,7 @@ async function fetchWeather() {
         if (response.ok) {
             const data = await response.json();
 
-            const qualifiedMembers = data.filter(member =>
-                member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver' || member.level === 'Gold' || member.level === 'Silver'
-            );
+            const qualifiedMembers = data.filter(member => member.level === 2 || member.level === 3);
 
             qualifiedMembers.sort(() => 0.5 - Math.random());
 
@@ -94,8 +92,8 @@ async function fetchWeather() {
               spotlightContainer.appendChild(spotlightItem);
             });
         
-    } else {
-        throw Error(await response.text());
+       } else {
+           throw Error(await response.text());
        }
     } catch (error) {
        console.error("Error fetching members:", error);
