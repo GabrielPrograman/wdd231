@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce | Join Us</title>
+    <meta name="description" content="Join the Timbuktu Chamber of Commerce. Apply for membership today.">
+    <meta name="author" content="Gabriel Bruzual">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover businesses in Timbuktu. Join our chamber today!">
+    <meta property="og:url" content="https://gabrielprograman.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://gabrielprograman.github.io/wdd231/chamber/images/logo.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css"> <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Timbuktu Chamber Logo" class="logo">
+        <h2>Timbuktu Chamber of Commerce</h2>
+        <button id="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+    </header>
+
+    <nav>
+        <ul id="primary-nav" class="hidden">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="directory.html" class="active">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main class="join-main">
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get" class="join-form">
+                <label>First Name*
+                    <input type="text" name="first" title="First Name" required autocomplete="given-name">
+                </label>
+
+                <label>Last Name*
+                   <input type="text" name="last" title="Last Name" required autocomplete="family-name">
+                </label>
+
+                <label>Organizational Title
+                    <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[1-zA-Z\s\-]{7,}">
+                </label>
+
+                <label>Email Address*
+                    <input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="example@email.com">
+                </label>
+
+                <label>Mobile Phone Number*
+                    <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel">
+                </label>
+
+                <label>Business/Organization Name*
+                    <input type="text" name="business" title="Business Name" required autocomplete="organization">
+                </label>
+
+                <label>Membership Level*
+                    <select name="level" required>
+                        <option value="" disabled selected>Select a level</option>
+                        <option value="np">NP Membership (Free for Non-profits)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business Description
+                   <textarea name="description" title="Business Description" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" class="submit-btn">Apply for Membership</button>
+            </form>
+        </section>
+
+        <aside class="membership-cards">
+            <div class="card fade-in" id="card-np">
+                <h3>NP Membership</h3>
+                <p>Free for non-profit organizations.</p>
+                <button type="button" class="open-modal" data-modal="modal-np">View Benefits</button>
+            </div>
+            <div class="card fade-in" id="card-bronze">
+                <h3>Bronze Membership</h3>
+                <p>Standard business features.</p>
+                <button type="button" class="open-modal" data-modal="modal-bronze">View Benefits</button>
+            </div>
+            <div class="card fade-in" id="card-silver">
+                <h3>Silver Membership</h3>
+                <p>Standard business features.</p>
+                <button type="button" class="open-modal" data-modal="modal-silver">View Benefits</button>
+            </div>
+            <div class="card fade-in" id="card-gold">
+                <h3>Gold Membership</h3>
+                <p>Premium placement and events.</p>
+                <button type="button" class="open-modal" data-modal="modal-gold">View Benefits</button>
+            </div>
+        </aside>
+    </main>
+
+    <dialog id="modal-np">
+        <h3>NP Membership Benefits</h3>
+        <p>No fee for registered non-profit organizations. Access to monthly networking events and newsletter features.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze">
+        <h3>Bronze Membership Benefits</h3>
+        <p>Includes directory listing, access to training seminars, and standard chamber event discounts.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver">
+        <h3>Silver Membership Benefits</h3>
+        <p>Includes Bronze benefits PLUS spotlight placement on the home page and free entry to the annual Expo.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold">
+        <h3>Gold Membership Benefits</h3>
+        <p>Includes Silver benefits PLUS VIP tables at all events, premium website advertising, and direct council access.</p>
+        <button class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    </body>
+    </html>
