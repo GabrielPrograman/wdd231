@@ -13,7 +13,7 @@ if (lastModifiedSpan) {
 const menuBtn = document.getElementById('menu-btn');
 const primaryNav = document.getElementById('primary-nav');
 
-if (menuBtn) {
+if (menuBtn && primaryNav) {
     menuBtn.addEventListener('click', () => {
         primaryNav.classList.toggle('hidden');
     });
@@ -35,6 +35,13 @@ function displayItems(places) {
             <p>${place.description}</p>
             <button class="learn-btn">Learn More</button>
         `;
+
+        const learnBtn = card.querySelector('.learn-btn');
+        learnBtn.addEventListener('click', () => {
+            alert(`You want to learn more  about ${place.name}? Feature coming soon!`);
+        });
+
+        
         container.appendChild(card);
     });
 }
