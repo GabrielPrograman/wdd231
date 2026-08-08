@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Downtown to North District", 
+        "level": "Easy",
+        "distance": "5 km",
+        "desc": "Safe commute route featuring protected bike lanes and minimal traffic crossings."
+    },
+    {
+        "id": 2,
+        "name": "Sunset River Ride",
+        "level": "Medium",
+        "distance": "12 km",
+        "desc": "Scenic evening ride along the riverside trail. Great for casual group cycling."
+    },
+    {
+        "id": 3,
+        "name": "Night Owl City Tour",
+        "level": "Medium",
+        "distance": "15 km",
+        "desc": "Weekly group night ride passing through illuminated city landmarks."
+    },
+    {
+        "id": 4,
+        "name": "Hill Climber Challenge",
+        "level": "Hard",
+        "distance": "20 km",
+        "desc": "Demanding routes with steep elevation gains designed for endurance training."
+    },
+    {
+        "id": 5,
+        "name": "Campus Commute Express",
+        "level": "Easy",
+        "distance": "3 km",
+        "desc": "Direct and safe cycling route connecting the main residential zone to university campus."
+    },
+    {
+        "id": 6,
+        "name": "Weekend Park Loop",
+        "level": "Easy",
+        "distance": "8 km",
+        "desc": "Relaxing greenway loop perfect for family rides and beginner cyclists."
+    },
+    {
+        "id": 7,
+        "name": "Historic Quarter Circuit",
+        "level": "Medium",
+        "distance": "10 km",
+        "desc": "Cultural route winding through historic cobblestone streets and heritage sites."
+    },
+    {
+        "id": 8,
+        "name": "Coastal Parkway Ride",
+        "level": "Medium",
+        "distance": "18 km",
+        "desc": "Breezy seaside path offering clear views and wide paved trails."
+    },
+    {
+        "id": 9,
+        "name": "Morning Coffee Sprint",
+        "level": "Easy",
+        "distance": "4 km",
+        "desc": "Short social ride stopping at local artisan coffee shops."
+    },
+    {
+        "id": 10,
+        "name": "Suburban Explorer Loop",
+        "level": "Hard",
+        "distance": "25 km",
+        "desc": "Long-distance route connecting suburban greenways with urban bike paths."
+    },
+    {
+        "id": 11,
+        "name": "Greenbelt Nature Path",
+        "level": "Easy",
+        "distance": "6 km",
+        "desc": "Car-free dedicated pathway through the central city park preserve."
+    },
+    {
+        "id": 12,
+        "name": "Metropolitan Bridge Crossing",
+        "level": "Medium",
+        "distance": "14 km",
+         "desc": "Route connecting east and west districts across the main city bridge."
+    },
+    {
+        "id": 13,
+        "name": "Midnight Marathon Trail",
+        "level": "Hard",
+        "distance": "40 km",
+        "desc": "Special long-distance event path utilized during annual club endurance events."
+    },
+    {
+        "id": 14,
+        "name": "Farmers Market Run",
+        "level": "Easy",
+        "distance": "5 km",
+        "desc": "Community-focused ride to the local weekend organic market."
+    },
+    {
+        "id": 15,
+        "name": "Industrial District Connector",
+        "level": "Medium",
+        "distance": "11 km",
+        "desc": "Optimized commuter pathway connecting employment hubs with residential zones."
+    }
+]

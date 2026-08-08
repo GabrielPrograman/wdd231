@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essential bicycle maintenance tips to keep your urban commute safe, smooth, ann reliable">
+    <meta name="author" content="Gabriel Bruzual">
+
+    <meta property="og:title" content="Join Us | CityPedal Club">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-bike.webp">
+    <meta property="og:url"  content="https://GabrielPrograman.github.io/wdd231/finalproject/">
+
+
+    <title>Bike Tips | CityPedal Club</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="CityPedal Club Logo" width="50" height="50">
+            <h1>CityPedal Club</h1>
+        </div>
+        <button id="menu-button" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav id="nav-menu" class="hidden">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="maintenance.html">Bike Tips</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2 style="text-align: center;">Membership Application</h2>
+            <p style="text-align: center;">Complete the form below to participate in scheduled group rides and club activities.</p>
+
+            <form action="thankyou.html" method="get" class="join-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fname">First Name:
+                        <input type="text" id="fname" name="fname" required placeholder="Jane">
+                    </label>
+                    <label for="lname">Last Name:
+                        <input type="text" id="lname" name="lname" required placeholder="Doe">
+                    </label>
+                    <label for="email">Email Address:
+                        <input type="email" id="email" name="email" required placeholder="jane.doe@email.com">
+                    </label>
+                    <label for="phone">Phone Number:
+                        <input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cycling Experience</legend>
+                    <label for="level">Experience Level:
+                        <select id="level" name="level">
+                            <option value="beginner">Beginner (0-10 km)</option>
+                            <option value="intermediate">Intermediate (10-30 km)</option>
+                            <option value="=advanced">Advanced (30+ km)</option>
+                        </select>
+                    </label>
+                    <label for="comments">Questions or Comments:
+                        <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your cycling goals..."></textarea>
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Submit Registration" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | CityPedal Club | WDD231 Final Project | Gabriel Bruzual</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="https://www.youtube.com" target="_blank" rel="noopener">Demonstration Video</a></p>
+    </footer>
+</body>
+</html>
