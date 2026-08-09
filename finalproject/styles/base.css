@@ -266,3 +266,9 @@ footer a {
     color: #ffd166;
     text-decoration: underline;
 }
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
